@@ -6,5 +6,18 @@ function isOdd(number){
 }
 }
 
-isOdd(7);
-isOdd(10);
+function oddsSmallerThan(number){
+   if (isOdd(number)){
+      return (number/2) | 0  ;
+   }else{
+      return (number/2)  ;
+   }
+}
+
+function squareOrDouble(number){
+   if (isOdd(number)){
+      return number * number  ;
+   }else{
+      return number + number ;
+   }
+}
